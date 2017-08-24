@@ -1,5 +1,0 @@
-feign:
-  hystrix:
-    enabled: true
-microspringboot2:
-  orders_url: "http://microspringboot3:8080"
