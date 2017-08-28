@@ -1,8 +1,14 @@
-spec:
+---
+apiVersion: "extensions/v1beta1"
+kind: "Deployment" 
+spec: 
   replicas: 1
-  template:
-    spec:
-      containers:
-        - resources:
-            limits:
-              memory: '250Mi'
+  template: 
+    spec: 
+      containers: 
+      - env:
+        - name: JAVA_OPTIONS
+          value: "-Xmx64m -Xss256k"
+        resources: 
+          limits: 
+            memory: "256Mi"
