@@ -17,7 +17,7 @@ public interface OrdersService {
     class OrdersServiceFallback implements OrdersService {
 
         public String getOrders(String customers) {
-            return "O997,O998";
+            return "F997,F998,F999";
         }
     }
 }
