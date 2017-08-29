@@ -21,8 +21,10 @@ public class TheRESTController {
 
     @RequestMapping(value = "/api/customer/orders", method = RequestMethod.POST)
     public String getCustomerOrders(@RequestBody String customers) {
-        log.info("* Finding orders for customers {}", customers);
-        return String.format("Orders for Customers %s is %s ", ordersService.getOrders(customers));
+        System.out.println("Finding orders for customers " + customers);
+        String results = ordersService.getOrders(customers);
+        System.out.println("Results: " + results);
+        return String.format("Orders for Customers %s is %s", results, customers);
     }
 
 
