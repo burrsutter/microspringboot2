@@ -2,8 +2,8 @@ feign:
   hystrix:
     enabled: true
 microspringboot2:
-  orders_url: "http://microspringboot3:8080"
-#  orders_url: "http://localhost:8083"
+  orders_url: "http://localhost:8083"
 server:
   tomcat:
-    max-threads: 10  
+    max-threads: 10
+  port: 8082

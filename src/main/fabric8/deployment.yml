@@ -8,7 +8,7 @@ spec:
       containers: 
       - env:
         - name: JAVA_OPTIONS
-          value: "-Xmx64m -Xss256k"
+          value: "-Xmx64m -Xss256k -Dspring.profiles.active=openshift"
         resources: 
           limits: 
             memory: "250Mi"
