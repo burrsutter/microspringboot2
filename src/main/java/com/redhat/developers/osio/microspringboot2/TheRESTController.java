@@ -45,7 +45,7 @@ public class TheRESTController {
         System.out.println("Customer Order Uri " + customersOrdersUri.toString());
         String results = restTemplate.postForObject(customersOrdersUri, customers, String.class);
 
-        System.out.println("Results: " + results);
+        System.out.println("Results:" + results);
 
         return String.format("Orders for Customers %s is %s", results, customers);
     }
